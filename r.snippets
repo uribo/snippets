@@ -90,3 +90,12 @@ snippet txt
 
 snippet xls
 	read_excel("${1:file}", sheet = 1)
+
+snippet qp
+	qplot(${1:x}, ${2:y}, data = ${3:data})
+	
+snippet ggp
+	${1:data} %>% ggplot(aes(${2:x}, ${3:y})) + geom_${4:type}()
+	
+snippet ggv
+	${1:data} %>% ggvis(~${2:x}, ~${3:y}) %>% layer_${4:type}()
