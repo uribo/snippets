@@ -82,3 +82,11 @@ snippet vapply
 snippet rapply
 	rapply(${1:list}, ${2:function})
 
+snippet csv
+	read.csv("${1:file}", header = TRUE)
+	
+snippet txt
+	read.table("${1:file}", header = TRUE)
+
+snippet xls
+	read_excel("${1:file}", sheet = 1)
