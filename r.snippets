@@ -82,6 +82,8 @@ snippet vapply
 snippet rapply
 	rapply(${1:list}, ${2:function})
 
+/* READ FILES */
+
 snippet csv
 	read.csv("${1:file}", header = TRUE)
 	
@@ -90,6 +92,8 @@ snippet txt
 
 snippet xls
 	read_excel("${1:file}", sheet = 1)
+
+/* VISUALISE */
 
 snippet plot
 	plot(${1:data}$${2:x}, ${1:data}$${3:y})
@@ -102,6 +106,8 @@ snippet ggp
 	
 snippet ggv
 	${1:data} %>% ggvis(~${2:x}, ~${3:y}) %>% layer_${4:type}()
+
+/* STATISTIC TEST AND MODELING */
 
 snippet cor
 	${1:data} %$% cor.test(${2:x}, ${3:y})
