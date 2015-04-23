@@ -102,3 +102,11 @@ snippet ggp
 	
 snippet ggv
 	${1:data} %>% ggvis(~${2:x}, ~${3:y}) %>% layer_${4:type}()
+
+snippet cor
+	${1:data} %$% cor.test(${2:x}, ${3:y})
+	
+snippet glm
+	${1:data} %$% glm(formula = "${2:formula}", 
+							 family = "${3:family}", 
+							 data = .)
