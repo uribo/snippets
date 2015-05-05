@@ -96,10 +96,10 @@ snippet xls
 /* VISUALISE */
 
 snippet plot
-	plot(${1:data}$${2:x}, ${1:data}$${3:y})
+	${1:data} %$% plot(${2:x}, ${3:y})
 
 snippet qp
-	qplot(${1:x}, ${2:y}, data = ${3:data})
+	${1:data} %$% qplot(${2:x}, ${3:y}, data = .)
 	
 snippet ggp
 	${1:data} %>% ggplot(aes(${2:x}, ${3:y})) + geom_${4:type}()
@@ -109,10 +109,17 @@ snippet ggv
 
 /* STATISTIC TEST AND MODELING */
 
-snippet cor
-	${1:data} %$% cor.test(${2:x}, ${3:y})
+snippet test
+	${1:data} %$% ${2:test.type}(${3:x}, ${4:y})
 	
 snippet glm
 	${1:data} %$% glm(formula = "${2:formula}", 
 							 family = "${3:family}", 
 							 data = .)
+
+/* UTILITIES */
+
+snippet rename
+  rename(${1:x}, ${2:y})
+
+/* DEVELOPMENTS */
