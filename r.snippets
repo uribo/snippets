@@ -83,7 +83,6 @@ snippet rapply
 	rapply(${1:list}, ${2:function})
 
 /* READ FILES */
-
 snippet csv
 	read.csv("${1:file}", header = TRUE)
 	
@@ -94,7 +93,6 @@ snippet xls
 	read_excel("${1:file}", sheet = 1)
 
 /* VISUALISE */
-
 snippet plot
 	${1:data} %$% plot(${2:x}, ${3:y})
 
@@ -108,18 +106,16 @@ snippet ggv
 	${1:data} %>% ggvis(~${2:x}, ~${3:y}) %>% layer_${4:type}()
 
 /* STATISTIC TEST AND MODELING */
-
-snippet test
+snippet testing
 	${1:data} %$% ${2:test.type}(${3:x}, ${4:y})
-	
+
 snippet glm
 	${1:data} %$% glm(formula = "${2:formula}", 
 							 family = "${3:family}", 
 							 data = .)
 
 /* UTILITIES */
-
 snippet rename
-  rename(${1:x}, ${2:y})
+	rename(${1:x}, ${2:y})
 
 /* DEVELOPMENTS */
