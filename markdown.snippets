@@ -29,3 +29,71 @@ snippet fa
 
 snippet emoji
 	`r remoji::emoji(alias = "${emoji}")`
+
+
+/* LaTeX Macro */
+snippet sect
+	\{$0}section{${1:title}}
+
+snippet bf
+	\textbf{${1:text}}
+	
+snippet jbf
+	\textgt{${1:text}}
+	
+snippet lpkg
+	\textbf{\{${1:package}\}}
+
+snippet it
+	\textit{${1:text}}
+
+snippet tt
+	\texttt{${1:text}}
+
+snippet item
+	\begin{itemize}
+		\item{${1:text}}
+		\item{${2:text}}
+	\end{itemize}
+	
+snippet enum
+	\begin{enumerate}
+		\item{${1:item}}
+		\item{${2:item}}
+	\end{enumerate}
+
+snippet desc
+	\begin{description}
+		\item[ ${1:define} ] ${2:description}
+	\end{description}
+
+snippet fig
+	\begin{figure}[htbp]
+	\begin{center}
+	
+	\caption{default}
+	\label{default}
+	\end{center}
+	\end{figure}
+
+snippet table
+	\begin{table}[htdp]
+	\caption{default}
+	\begin{center}
+	\begin{tabular}{|c|c|}
+	
+	\end{tabular}
+	\end{center}
+	\label{default}
+	\end{table}%
+
+snippet eq
+	\begin{equation}
+		${0}
+	\end{equation}
+
+snippet ft
+	\footnote{${1:text}}
+
+snippet index
+	\index{${1:rubi}@${2:define}}
