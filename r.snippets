@@ -115,6 +115,9 @@ snippet glm
 							 data = .)
 
 /* UTILITIES */
+snippet he
+	library(help = "${1:package}")
+
 snippet rename
 	rename(${1:x}, ${2:y})
 	
@@ -126,8 +129,24 @@ snippet emoji
 	
 snippet pipe
 	%>>% 
+	
+snippet leaflet
+	leaflet() %>% addTiles() %>% setView(lng = 135.0, lat = 38.0, zoom = 3)
+
+snippet leaflet2
+	leaflet() %>% addTiles() %>% addCircleMarkers(radius = 3)
+
+snippet lv
+	.Last.value
+
+snippet fx
+	if (file.exists("${1:file}") != TRUE) {
+	
+	}
+	
+snippet bookdown
+	bookdown::render_book("index.Rmd", output_format = "bookdown::gitbook")
 
 /* DEVELOPMENTS */
 snippet pkgv
 	packageVersion("${1:package}")
-
